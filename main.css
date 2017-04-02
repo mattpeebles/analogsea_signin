@@ -95,6 +95,7 @@ div > img {
 		color: white;
 		font-size: 28px;
 		height: 55px;
+		cursor: pointer;
 	}
 
 	.buttontext{

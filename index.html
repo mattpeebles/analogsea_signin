@@ -21,25 +21,22 @@
 					</legend>
 				</div>
 					
-					<form class="signup-form" action="/signup/" method="post">
+					<form class="signup-form" action="/signup" method="post">
 						<div class="info-block">
-							<label for="email" required class="type">
+							<label for="user-email"/>
 								Email
 							</label>
-							<input type="email" name="email" id="email" placeholder="foo@bar.com">
+							<input type="email" name="email" id="email" placeholder="foo@bar.com" required>
 						</div>
 						<div class="info-block"> 
-							<label for="password" required class="type">
+							<label for="user-password">
 								Password
 							</label>
-							<input type="password" name="password" id="password" placeholder="1234passw0rd">
+							 <input placeholder="1234passw0rd" label="false" type="password" name="user-password" id="user-password" required/>
 						</div>
+						<button type="submit" class="signbutton"><span class="buttontext">Sign Up</span></button>
 					</form>
 			</fieldset>
-		<!-- Sign Up Button -->
-			<div class="signbuttondiv">
-				<button type="button" class="signbutton"><span class="buttontext">Sign Up</span></button>
-			</div>
 		<!-- Forgot Password Link-->
 			<div class="forgotpassworddiv">
 				<p class="forgotpasswordtext"><a href="/forgot-password/new" class="forgotpasswordtext">Forgot password?</a></p>
