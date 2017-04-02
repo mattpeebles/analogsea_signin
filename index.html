@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AnalogSea Signup Form</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<!-- Logo -->
+	<section>
+		<div class="logo">
+			<img src="logo.png">
+		</div>
+	</section>
+<!-- Sign Up Form -->
+	<section>
+		<div class="form">
+			<fieldset name="signup-form" class="signup-form">
+				<div>
+					<legend class="signup-title">
+						Sign up
+					</legend>
+				</div>
+					
+					<form class="signup-form" action="/signup/" method="post">
+						<div class="info-block">
+							<label for="email" required class="type">
+								Email
+							</label>
+							<input type="email" name="email" id="email" placeholder="foo@bar.com">
+						</div>
+						<div class="info-block"> 
+							<label for="password" required class="type">
+								Password
+							</label>
+							<input type="password" name="password" id="password" placeholder="1234passw0rd">
+						</div>
+					</form>
+			</fieldset>
+		<!-- Sign Up Button -->
+			<div class="signbuttondiv">
+				<button type="button" class="signbutton"><span class="buttontext">Sign Up</span></button>
+			</div>
+		<!-- Forgot Password Link-->
+			<div class="forgotpassworddiv">
+				<p class="forgotpasswordtext"><a href="/forgot-password/new" class="forgotpasswordtext">Forgot password?</a></p>
+			</div>
+		</div>
+	</section>
+<!-- Log In -->
+	<section>
+		<div class="logindiv">
+			<p class="login">Already have an account? <a href="/login" class="login loglink">Log in</a></p>
+		</div>
+	</section>
+</body>
+</html>
